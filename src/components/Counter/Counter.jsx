@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import s from "./Counter.module.css";
+import Modal from "../Modal/Modal.jsx";
 
 const Counter = () => {
   const [count, setCount] = useState(0);
   const [step, setStep] = useState(11);
+
   const handleChange = (e) => {
     const value = +e.target.value;
     setStep(value);
