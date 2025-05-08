@@ -22,8 +22,8 @@ const App = () => {
       </button> */}
       {/* <Counter /> */}
       {/* <ColorPicker /> */}
-      {/* <TodoList /> */}
-      <CurrentTime />
+      <TodoList />
+      {/* <CurrentTime /> */}
     </>
   );
 };
