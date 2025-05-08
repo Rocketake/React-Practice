@@ -25,7 +25,8 @@ const Modal = ({ onClose }) => {
   return (
     <div onClick={handleBackdropClose} className={s.wrapper}>
       <div className={s.content}>
-        <h1 className={s.title}>Hello</h1>
+        <h1 className={s.title}>Hello, User</h1>
+
         <button onClick={onClose} className={s.btn}>
           Exit
         </button>
