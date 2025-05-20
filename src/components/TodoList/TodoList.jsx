@@ -39,6 +39,7 @@ export const TodoList = () => {
     };
 
     setTodos([...todos, newTodo]);
+    setText("");
   };
 
   return (
