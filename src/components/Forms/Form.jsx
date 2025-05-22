@@ -1,20 +1,24 @@
 import React, { useState } from "react";
 
 const Form = () => {
-  const [values, setValues] = useState({
+  const INITIAL_VALUES = {
     username: "",
     email: "",
     password: "",
-  });
+  };
+
+  const [values, setValues] = useState(INITIAL_VALUES);
 
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(values);
+    setValues(INITIAL_VALUES);
   };
 
   const handleChange = (e) => {
     setValues(() => ({ ...values, [e.target.name]: e.target.value }));
   };
+
   return (
     <div>
       <form onSubmit={handleSubmit}>
